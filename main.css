@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: 'apercu';
-    src: url('img/font.otf');
+    src: url('lib/font.otf');
 }
 
 * {
@@ -31,6 +31,7 @@
 html {
     margin: 0px;
     scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 
 ::scrollbar {
@@ -97,7 +98,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     background-color: var(--bg-color);
     transition: 0.25s;
 }
@@ -206,7 +206,7 @@ h3.section-title {
 /* HOME */
 
 .home {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .home-text {
@@ -228,6 +228,12 @@ h3.section-title {
 
 .home-img img {
     width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .home-logo {
+        display: none;
+    }
 }
 
 .home-text h1 {
