@@ -209,10 +209,20 @@ h3.section-title {
 
 .home {
     min-height: 100vh;
+    background-color: rgba(16, 6, 19, 0.4);
+}
+
+.back {
+    height: 100vh;
+    width: 100vw;
     background-image: url('lib/home-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .home-text {
@@ -307,6 +317,30 @@ a.video:hover {
     font-family: 'open sans', sans-serif;
 }
 
+.avatar {
+    background: linear-gradient(to right, #b5b7ff, #d3c7ff);
+    color: #fdfdfe;
+}
+
+.house {
+    background: linear-gradient(to right, #fad8b4, #cb937a);
+    color: #fdfdfe;
+}
+
+.explore {
+    background: linear-gradient(to right, #783b63, #aa4f8a);
+    color: #fdfdfe;
+}
+
+.objective {
+    background: linear-gradient(to right, #2b2362, #201b42);
+    color: #fdfdfe;
+}
+
+#features .section-hr {
+    background: #fdfdfe !important;
+}
+
 /* MARKET */
 
 .market {
@@ -395,4 +429,19 @@ div.video {
 .footer-text a{
     color: #382d83;
     opacity: 1;
+}
+
+.footer-link-text {
+    color: #fdfdfe !important;
+    font-size: 16px;
+}
+
+.footer-contact-text {
+    color: #fdfdfe !important;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.footer-contact-text i {
+    padding: 0px 5px;
 }
