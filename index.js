@@ -14,8 +14,10 @@ function showPage() {
 
 jQuery(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
-        $(".navbar").css("background-color", "#0e0c0f");
+        $(".navbar").css("background-color", "#100613");
+        $(".navbar a").css("color", "#FBFBFD");
     } else {
         $(".navbar").css("background", "none");
+        $(".navbar a").css("color", "#FBFBFD");
     }
 });
