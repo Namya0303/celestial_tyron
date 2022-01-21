@@ -3,14 +3,11 @@
 :root {
     --primary-color: #261a90;
     --secondary-color: #161549;
-    --third-color: #A96C74;
-    --fourth-color: #23193C;
-    --lighter-bg-color: #161218;
+    --third-color: #7c69bf;
     --nav-bg-color: rgb(30, 30, 30);
     --font-color: #FBFBFD;
-    --bg-color: #0d0a0e;
+    --bg-color: #06040D;
     --loader-bg-color: #0c0c0c;
-    --overlay-color: rgba(255, 255, 255, 0.1);
     --scroll-bg-color: rgb(14, 14, 14);
     --scroll-fg-color: rgb(29, 29, 29);
 }
@@ -175,6 +172,7 @@ a:hover {
     color: var(--font-color);
     transition: 0.4s;
     padding: 75px 0px;
+    border-bottom: 4px solid #fdfdfe;
 }
 
 .section-hr {
@@ -209,7 +207,34 @@ h3.section-title {
 
 .home {
     min-height: 100vh;
-    background-color: rgba(16, 6, 19, 0.4);
+    background-color: rgba(16, 6, 19, 0.6);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    border-bottom: none;
+}
+
+.market-home {
+    min-height: 70vh;
+}
+
+.market-home .home-text {
+    margin-top: 10vh;
+}
+
+.market-home .back {
+    height: 70vh;
+    background-image: url('lib/market.png');
+}
+
+.about-home {
+    min-height: 70vh;
+}
+
+.about-home .home-text {
+    margin-top: 10vh;
+}
+
+.about-home .back {
+    height: 70vh;
 }
 
 .back {
@@ -229,6 +254,7 @@ h3.section-title {
     margin-top: 25vh;
     width: 100%;
     margin-bottom: 20px;
+    padding: 30px;
 }
 
 .home-img {
@@ -254,7 +280,10 @@ h3.section-title {
     font-size: 60px;
     font-family: 'apercu', sans-serif;
     font-weight: 800;
-    padding-top: 30px;
+}
+
+.home-links {
+    margin-top: 20px;
 }
 
 .home-text h3 {
@@ -280,7 +309,7 @@ a.enter {
 }
 
 a.video {
-    color: var(--third-color);
+    color: var(--font-color);
     padding: 7px 15px;
     transition: 0.25s;
     margin: 5px;
@@ -296,7 +325,12 @@ a.video:hover {
 /* ABOUT US */
 
 .about {
-    background: linear-gradient(to right, #d3c7ff, #b5b7ff);
+    background-color: #06040D;
+    border-top: 4px solid #fdfdfe;
+}
+
+.about .section-hr {
+    background: #fdfdfe;
 }
 
 /* FEATURES */
@@ -318,22 +352,23 @@ a.video:hover {
 }
 
 .avatar {
-    background: linear-gradient(to right, #b5b7ff, #d3c7ff);
+    background: linear-gradient(to right, #848cb9, #99a6e6);
     color: #fdfdfe;
+    border-top: 4px solid #fdfdfe;
 }
 
 .house {
-    background: linear-gradient(to right, #fad8b4, #cb937a);
+    background: linear-gradient(to right, #7C69BF, #9481d6);
     color: #fdfdfe;
 }
 
 .explore {
-    background: linear-gradient(to right, #783b63, #aa4f8a);
+    background: linear-gradient(to right, #210F26, #33193a);
     color: #fdfdfe;
 }
 
 .objective {
-    background: linear-gradient(to right, #2b2362, #201b42);
+    background: linear-gradient(to right, #3f1e28, #5e2f3d);
     color: #fdfdfe;
 }
 
@@ -344,21 +379,34 @@ a.video:hover {
 /* MARKET */
 
 .market {
-    background-color: #d49172;
-    color: #100613;
-}
-
-.market .col-md-10 {
-    background-color: #ffd8ae;
-    border-radius: 20px;
-    padding: 30px;
+    background-color: #c43d3d;
+    color: #fdfdfe;
+    border-top: 4px solid #fdfdfe;
 }
 
 .market-item {
     border-radius: 15px;
-    border: #100613 solid 2px;
-    background-color: #fdfdfe;
-    margin: 20px;
+    background-color: #ee6e6e;
+    color: #fdfdfe;
+    margin: 20px 50px;
+    box-shadow:rgba(16, 6, 19, 0.2) 0px 0px 10px;
+    transition: 0.25s;
+}
+
+.market .section-hr {
+    background: #fdfdfe;
+}
+
+.market-item:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.coin {
+    height: 25px;
+    margin: 0px 5px;
 }
 
 .market-text {
@@ -377,20 +425,25 @@ a.video:hover {
 .market-img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 100px;
+    height: 200px;
+    padding: 20px;
+}
+
+.market-img img {
+    height: 100%;
 }
 
 /* ENTERGALLERY */
 
 .enter-gallery {
-    background: url('lib/enter-bg.jpg') no-repeat center center fixed;
+    background: url('lib/enter-bg.png') no-repeat center center fixed;
     background-size: cover;
     color: #fdfdfe;
 }
 
 .enter-gallery a.enter {
     background-color: #fdfdfe;
-    color: #44389b !important;
+    color: #c43d3d !important;
     font-size: 15px;
     text-transform: uppercase;
     font-family: 'open sans', sans-serif;
@@ -404,7 +457,7 @@ a.video:hover {
 /* VIDEO */
 
 div.video {
-    background-color: #2b2362;
+    background-color: #3f1e28;
     color: #fdfdfe;
 }
 
@@ -413,6 +466,10 @@ div.video {
 }
 
 /* CONTACT */
+
+.footer {
+    border-bottom: none;
+}
 
 .footer-link {
     opacity: 1;

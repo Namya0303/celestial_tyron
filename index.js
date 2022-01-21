@@ -1,3 +1,7 @@
+// AOS
+
+AOS.init();
+
 // LOADER
 
 var myVar;
@@ -14,7 +18,7 @@ function showPage() {
 
 jQuery(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
-        $(".navbar").css("background-color", "#100613");
+        $(".navbar").css("background-color", "var(--bg-color)");
         $(".navbar a").css("color", "#FBFBFD");
     } else {
         $(".navbar").css("background", "none");
