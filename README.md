@@ -1,6 +1,6 @@
 # Celestial
 
-Entry for Creative event at Ncrypt 21
+Entry for Creative event at Ncrypt <br>
 The website can be viewed at <http://celestial1.herokuapp.com>
 
 ## Celestial
