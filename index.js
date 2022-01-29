@@ -14,15 +14,14 @@ function showPage() {
     document.getElementById("load").style.transform = "translateY(-200vh)";
 }
 
-// NAV
-
+// NAVBAR
 jQuery(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
-        $(".navbar").css("background-color", "var(--bg-color)");
-        $(".navbar a").css("color", "#FBFBFD");
+        $(".navb").css("background-color", "var(--bg-color)");
+        $(".navb a").css("color", "#FBFBFD");
     } else {
-        $(".navbar").css("background", "none");
-        $(".navbar a").css("color", "#FBFBFD");
+        $(".navb").css("background", "none");
+        $(".navb a").css("color", "#FBFBFD");
     }
 });
 

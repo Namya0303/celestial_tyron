@@ -137,6 +137,55 @@ a:hover {
     opacity: 1;
 }
 
+/* LOADER */
+.load {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    padding-top: 17%;
+    z-index: 999999;
+    position: fixed;
+    transition: 1s ease-in-out;
+}
+
+.loader-wheel {
+    display: block;
+    position: relative;
+    background-image: url(lib/logo.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    animation: scale 1.5s linear infinite;
+}
+
+.loader-wheel:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--primary-color);
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    animation: spin 1.5s linear infinite;
+}
+
+.loader-wheel::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--third-color);
+    animation: spin 1s linear infinite;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+}
+
 /*NAVBAR*/
 .navb {
 	width:100%;
@@ -610,4 +659,78 @@ div.video {
 
 .footer-contact-text i {
     padding: 0px 5px;
+}
+
+/* ANIMATIONS */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes scale {
+    0%, 100% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes scale {
+    0%, 100% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes scale {
+    0%, 100% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
 }
