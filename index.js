@@ -25,3 +25,11 @@ jQuery(document).on("scroll", function () {
         $(".navbar a").css("color", "#FBFBFD");
     }
 });
+
+// SIDENAV 
+function openNav(){
+    document.getElementById("sidenav").style.width="100%";
+}
+function closeNav () {
+    document.getElementById("sidenav").style.width="0";
+}

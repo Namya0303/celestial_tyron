@@ -137,30 +137,134 @@ a:hover {
     opacity: 1;
 }
 
-/* NAVBAR */
-
-.navbar {
-    transition: 0.25s;
-    z-index: 21;
+/*NAVBAR*/
+.navb {
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:999;
+    padding: 10px 15px;
+	transition: 0.6s;
 }
 
-.navbar a {
-    transition: 0.25s;
-    margin: 10px;
-    color: #fdfdfe;
-    opacity: 0.8;
+.navb img{
+    height: 10%;
+    width: 10%;
+    float: left;
+    padding: 0.5%;
 }
 
-.navbar a:hover {
-    opacity: 1;
+.navb .bar a{
+	float: right;
+    display: block;
+	color: #fff;
+	font-size: 17px;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+    padding: 13px 15px;
+    position: relative;
+    transition: 0.5s;
 }
 
-.navlogo {
-    height: 30px;
+.navb a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+    transition: all 0.6s;
 }
 
-.navlogo-dark {
-    display: none;
+.navb a:hover::after {
+    width: 100%;
+}
+
+.sidenav {
+	height:100%;
+	width:0%;
+	position:fixed;
+	z-index:500;
+	top:0px;
+	left:0px;
+    padding-top: 4px;
+	background-color:rgba(0,0,0,0.6);
+	overflow-x:hidden;
+	transition:0.5s;
+	padding-top:10%;
+}
+
+.sidenav a{
+	display:block;
+	color: #fff;
+	padding: 6px 2px;
+	width:80%;
+	text-align:center;
+	text-decoration:none;
+	transition: all 0.5s;
+	position:relative;
+	font-size: 22px;
+	font-weight:bold;
+	font-family:'Poiret One', cursive;
+}
+
+.sidenav a::after {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin:auto;
+	width:0%;
+	content:'.';
+	color:transparent;
+	background-color: #fff;
+	height:2px;
+	transition: all 0.5s;
+}
+
+.sidenav a:hover::after {
+	width:50%;
+}
+
+.sidenav .close {
+	position:absolute;
+	top:60px;
+	right:35px;
+	font-size:36px;
+	width:10%;
+}
+
+
+@media screen and (max-height:450px) {
+	.sidenav {padding-top:15px;}
+	.sidenav a {font-size:18px;}
+}
+
+@media screen and (max-width:950px){
+	.nav-big {
+		display:none !important;
+	}
+	.nav-small {
+	display: block!important;	
+	}	
+}
+
+.nav-big {
+	display:block;
+}	
+
+.nav-small{
+	display:none;
+}
+
+.nav-small .icon{
+	color:var(--color-three);
+	font-size: 35px;
+	padding:5px;
 }
 
 /* SECTIONS */
