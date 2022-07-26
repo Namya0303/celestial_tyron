@@ -151,7 +151,7 @@ a:hover {
 .loader-wheel {
     display: block;
     position: relative;
-    background-image: url(lib/logo.png);
+    background-image: url(lib/logo-icon.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -661,6 +661,55 @@ div.video {
     padding: 0px 5px;
 }
 
+
+/*COMMENT SECTION*/
+.comment_input, .comment{
+    background-color: #70967d41;
+    margin: 20px 0px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    color: #f6f6f6;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: transparent solid 2px;
+    color: #f6f6f6;
+    border-bottom-color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+input:focus, textarea:focus {
+    border-bottom-color: rgb(100, 100, 100);
+}
+
+.btn{
+    border: rgb(100, 100, 100) solid 2px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: 0.25s;
+    width: auto;
+}
+
+.btn:hover{
+    background-color: rgb(100, 100, 100);
+    color: #f3f3f3;
+}
+
+.card-title{
+    font-size:4vh;
+    color:#f3f3f3;
+}
+
+.alert {
+    display: none;
+}
 /* ANIMATIONS */
 
 @keyframes spin {

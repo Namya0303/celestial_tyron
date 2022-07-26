@@ -32,3 +32,9 @@ function openNav(){
 function closeNav () {
     document.getElementById("sidenav").style.width="0";
 }
+
+//autoheight
+function auto_height(elem) {
+    elem.style.height = "2px";
+    elem.style.height = (elem.scrollHeight) + "px";
+}
