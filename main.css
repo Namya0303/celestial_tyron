@@ -373,7 +373,7 @@ h3.section-title {
 
 .market-home .back {
     height: 70vh;
-    background-image: url('lib/market.png');
+    background-image: url('lib/marketbg.png');
     background-color: var(--bg-color);
 }
 
