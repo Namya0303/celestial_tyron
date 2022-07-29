@@ -392,10 +392,11 @@ h3.section-title {
 .back {
     height: 100vh;
     width: 100vw;
-    background-image: url('lib/home-bg.png');
+    background-image: url('lib/home-bg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: absolute;
     top: 0;
     left: 0;
